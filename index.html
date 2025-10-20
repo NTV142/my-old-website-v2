@@ -1,7 +1,27 @@
 <html>
 <head>
 <title>NTのHP</title>
+<style>
+    /* 1. SNSコンテナの設定 */
+    #sns-container {
+        display: flex;     /* Flexboxを有効にして横に並べる */
+        width: 100%;       /* 親要素の幅を100%にする */
+        margin: 20px 0;    /* 上下に余白を追加（任意） */
+    }
 
+    /* 2. 画像（リンク）の設定 */
+    #sns-container a {
+        flex-grow: 1;      /* 🌟 利用可能なスペースを均等に埋める 🌟 */
+        text-align: center; /* アイコンを中央揃えにする */
+    }
+
+    /* 3. 画像自体の設定 */
+    #sns-container img {
+        width: 90%;        /* リンク要素の幅（均等に分配された幅）の90%を使用 */
+        height: auto;      /* 歪みを防ぐため、高さを自動調整 */
+        max-width: 120px;  /* スマホやPCで大きくなりすぎないよう最大幅を制限（任意） */
+    }
+</style>
 </head>
 
 
@@ -10,18 +30,28 @@
 <h1>SNSのリンク集<br>
 フォローよろしく！</h1>
 
-<a href='https://www.metro.ed.jp/kuramaekoka-h/'><img src='koutyou.jpg'></a><br>
+<a href='https://www.metro.ed.jp/kuramaekoka-h/'><img src='koutyou.jpg' style='max-width: 150px; height: auto;'></a><br>
 
 
-  
-<a href='https://www.tiktok.com/@ntv142'><img src='①TikTok.png' style='width: 200px; height: auto;'></a>
-<a href='https://www.youtube.com/@ntv142'><img src='②YouTube.png' style='width: 200px; height: auto;'></a>
-<a href='https://twitter.com/NTV142'><img src='③X.png' style='width: 200px; height: auto;'></a>
-<a href='https://www.instagram.com/ntv_142/?hl=ja'><img src='④Instagram.png' style='width: 200px; height: auto;'></a>
-<a href='https://www.twitch.tv/ntsanch'><img src='⑤Twitch.png' style='width: 200px; height: auto;'></a>
+<div id="sns-container">
+    
+    <a href='https://www.tiktok.com/@ntv142'>
+        <img src='①TikTok.png' alt='TikTok'>
+    </a>
+    <a href='https://www.youtube.com/@ntv142'>
+        <img src='②YouTube.png' alt='YouTube'>
+    </a>
+    <a href='https://twitter.com/NTV142'>
+        <img src='③X.png' alt='X'>
+    </a>
+    <a href='https://www.twitch.tv/ntsanch'>
+        <img src='④Instagram.png' alt='Twitch 1'>
+    </a>
+    <a href='https://www.twitch.tv/ntsanch'>
+        <img src='⑤Twitch.png' alt='Twitch 2'>
+    </a>
+
+</div>
 
 </body>
-
-
 </html>
-
