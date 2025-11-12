@@ -1,25 +1,49 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="icon" href="NT.ico" type="image/x-icon"> <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" href="NT.ico" type="image/x-icon">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <title>NTのHP</title>
 <style>
-    /* 1. SNSコンテナの設定 - 共通 */
-    .sns-row { /* IDからClass名に変更し、複数行に対応 */
-        display: flex;     /* Flexboxを有効にして横に並べる */
+    /* ------------------------------------- */
+    /* 1. H1の文字サイズを画面幅に合わせる */
+    /* ------------------------------------- */
+    h1 {
+        /* 画面幅の5%を文字サイズとする（最適な値は調整してください） */
+        font-size: 5vw; 
+        text-align: center; /* 中央寄せ */
+    }
+
+    /* ------------------------------------- */
+    /* 2. サイトのアイコン画像のサイズ調整 */
+    /* ------------------------------------- */
+    .koutyou-img {
+        display: block; /* ブロック要素にして中央寄せを有効にする */
+        margin: 20px auto; /* 上下に余白を空け、左右マージンで中央寄せ */
+        width: 80%; /* 画面幅の80%に画像を広げる */
+        max-width: 300px; /* 画像が大きくなりすぎるのを防ぐための最大幅 */
+        height: auto;
+    }
+
+
+    /* ------------------------------------- */
+    /* 3. SNSコンテナの設定 - 共通 (変更なし) */
+    /* ------------------------------------- */
+    .sns-row { 
+        display: flex;
         width: 100%;       
-        margin: 10px 0;    /* 上下に余白を追加 */
+        margin: 10px 0;
     }
 
-    /* 2. 画像（リンク）の設定 - 共通 */
+    /* 4. 画像（リンク）の設定 - 共通 (変更なし) */
     .sns-row a { 
-        flex-grow: 1;      /* 利用可能なスペースを均等に埋める */
-        text-align: center; /* アイコンを中央揃えにする */
+        flex-grow: 1;      
+        text-align: center;
     }
 
-    /* 3. 画像自体の設定 - 共通 */
+    /* 5. 画像自体の設定 - 共通 (変更なし) */
     .sns-row img {
-        width: 90%;        
+        width: 90%; /* 親要素の幅に応じて自動調整 */
         height: auto;
         max-width: 120px;
     }
@@ -32,7 +56,9 @@
 <h1>SNSのリンク集<br>
 フォローよろしく！</h1>
 
-<a href='https://www.metro.ed.jp/kuramaekoka-h/'><img src='koutyou.jpg' style='max-width: 150px; height: auto;'></a><br>
+<a href='https://www.metro.ed.jp/kuramaekoka-h/'>
+    <img src='koutyou.jpg' class='koutyou-img' alt="校長画像">
+</a><br>
 
 
 <div class="sns-row">
